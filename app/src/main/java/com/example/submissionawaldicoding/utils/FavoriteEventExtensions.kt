@@ -1,7 +1,7 @@
 package com.example.submissionawaldicoding.utils
 
 import com.example.submissionawaldicoding.data.local.entity.EventEntity
-import com.example.submissionawaldicoding.data.remote.ListEventsItem
+import com.example.submissionawaldicoding.data.remote.response.ListEventsItem
 
 fun EventEntity.toListEventsItem(): ListEventsItem {
     return ListEventsItem(

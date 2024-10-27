@@ -15,11 +15,7 @@
         android:theme="@style/Theme.SubmissionAwalDicoding"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_home" />
-        <activity
-            android:name=".HomeActivity"
+            android:name="com.example.submissionawaldicoding.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.detail.DetailActivity"
+            android:name="com.example.submissionawaldicoding.ui.detail.DetailActivity"
             android:label="@string/title_activity_detail">
         </activity>
     </application>

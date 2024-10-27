@@ -28,4 +28,10 @@
         android:name="com.example.submissionawaldicoding.ui.favorite.FavoriteFragment"
         android:label="@string/title_favorite"
         tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.example.submissionawaldicoding.ui.setting.SettingFragment"
+        android:label="@string/switch_theme"
+        tools:layout="@layout/fragment_setting"/>
 </navigation>

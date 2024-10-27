@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.submissionawal.ui.EventDetailAdapter
-import com.example.submissionawaldicoding.data.remote.ListEventsItem
+import com.example.submissionawaldicoding.ui.detail.EventDetailAdapter
+import com.example.submissionawaldicoding.data.remote.response.ListEventsItem
 import com.example.submissionawaldicoding.databinding.FragmentUpcomingBinding
 import com.example.submissionawaldicoding.ui.detail.DetailActivity
 
@@ -21,7 +21,11 @@ class UpcomingFragment : Fragment() {
     private val binding get() = _binding!!
     private val upcomingViewModel: UpcomingViewModel by viewModels()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         _binding = FragmentUpcomingBinding.inflate(inflater, container, false)
         return binding.root
     }

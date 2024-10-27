@@ -1,4 +1,4 @@
-package com.example.submissionawal.ui.home
+package com.example.submissionawaldicoding.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

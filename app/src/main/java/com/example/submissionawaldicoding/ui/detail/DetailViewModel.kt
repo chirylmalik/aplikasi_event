@@ -2,7 +2,7 @@ package com.example.submissionawaldicoding.ui.detail
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.submissionawaldicoding.data.remote.DetailEventResponse
+import com.example.submissionawaldicoding.data.remote.response.DetailEventResponse
 import com.example.submissionawaldicoding.data.remote.retrofit.ApiConfig
 import retrofit2.Call
 import retrofit2.Callback
@@ -16,7 +16,10 @@ class DetailEventViewModel : ViewModel() {
         val apiService = ApiConfig.getApiService()
         val call = apiService.getDetailEvent(id)
         call.enqueue(object : Callback<DetailEventResponse> {
-            override fun onResponse(call: Call<DetailEventResponse>, response: Response<DetailEventResponse>) {
+            override fun onResponse(
+                call: Call<DetailEventResponse>,
+                response: Response<DetailEventResponse>
+            ) {
                 if (response.isSuccessful) {
                     val detailEventResponse = response.body()
                     if (detailEventResponse != null && !detailEventResponse.error!!) {

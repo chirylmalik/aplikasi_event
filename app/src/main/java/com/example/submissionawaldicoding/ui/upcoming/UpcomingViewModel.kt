@@ -4,8 +4,8 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.submissionawaldicoding.data.remote.EventResponse
-import com.example.submissionawaldicoding.data.remote.ListEventsItem
+import com.example.submissionawaldicoding.data.remote.response.EventResponse
+import com.example.submissionawaldicoding.data.remote.response.ListEventsItem
 import com.example.submissionawaldicoding.data.remote.retrofit.ApiConfig
 import retrofit2.Call
 import retrofit2.Callback
@@ -48,7 +48,7 @@ class UpcomingViewModel : ViewModel() {
 
             override fun onFailure(call: Call<EventResponse>, t: Throwable) {
                 _isLoading.value = false
-                Log.e(TAG, "onFailure: ${t.message }")
+                Log.e(TAG, "onFailure: ${t.message}")
             }
         })
     }

@@ -1,7 +1,7 @@
 package com.example.submissionawaldicoding.data.remote.retrofit
 
-import com.example.submissionawaldicoding.data.remote.DetailEventResponse
-import com.example.submissionawaldicoding.data.remote.EventResponse
+import com.example.submissionawaldicoding.data.remote.response.DetailEventResponse
+import com.example.submissionawaldicoding.data.remote.response.EventResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

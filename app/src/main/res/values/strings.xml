@@ -1,15 +1,18 @@
 <resources>
-    <string name="app_name">SubmissionAwalDicoding</string>
+    <string name="app_name">Dicoding Event</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_detail">Detail Event</string>
     <string name="title_home">Home</string>
     <string name="title_upcoming">Upcoming</string>
     <string name="title_finished">Finished</string>
     <string name="title_favorite">Favorite</string>
+    <string name="title_setting">Setting</string>
 
+    <string name="image_banner">Image Cover</string>
     <string name="information">Informasi:</string>
     <string name="register">Register</string>
     <string name="save_favorite">Save Favorite?</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dark_mode_setting">Dark Mode</string>
+    <string name="switch_theme">Switch Theme</string>
+    <string name="empty_favorite">Kamu belum menambahkan event apapun ke daftar favorit</string>
 </resources>
